@@ -5,3 +5,4 @@ resources:
   - ./sealed-secrets
   - ./metallb
   - ./traefik
+  - ./longhorn
