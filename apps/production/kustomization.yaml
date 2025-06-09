@@ -5,4 +5,4 @@ resources:
 patches:
   - path: ./pihole/patches/secret.yaml
     target:
-      kind: Secret
+      kind: SealedSecret 
