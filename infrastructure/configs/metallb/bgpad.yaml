@@ -3,4 +3,4 @@ kind: BGPAdvertisement
 metadata:
   name: external
   namespace: metallb-system
-spec:
+spec: {}
