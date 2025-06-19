@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: immich
+  namespace: immich
+  annotations:
+    cert-manager.io/cluster-issuer: cloudflare 
+spec:
+  ingressClassName: traefik-local 
+  tls:
+  - hosts:
+    - immich.flux.techbabette.com
+    secretName: immich-cert 
+  rules:
+  - host: immich.flux.techbabette.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: immich-server 
+            port:
+              number: 2283 
+        path: /
+        pathType: Prefix 
