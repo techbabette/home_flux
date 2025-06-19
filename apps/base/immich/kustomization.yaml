@@ -5,3 +5,5 @@ resources:
   - ./volumes 
   - ./secrets
   - database-cluster.yaml 
+  - repository.yaml
+  - release.yaml
