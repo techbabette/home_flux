@@ -3,7 +3,14 @@ kind: Kustomization
 resources:
   - ../base/pihole
   - ../base/speedtest
+  - ../base/immich
 patches:
   - path: ./pihole/patches/secret.yaml
     target:
-      kind: SealedSecret 
+      kind: SealedSecret
+      namespace: pihole
+  - path: ./immich/patches/database-user.yaml
+    target:
+      kind: SealedSecret
+      name: database-user
+      namespace: immich

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: images 
+  namespace: immich 
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: longhorn-unsafe
+  resources:
+    requests:
+      storage: 60Gi
