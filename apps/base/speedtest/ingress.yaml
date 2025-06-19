@@ -7,6 +7,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: cloudflare
 spec:
+  ingressClassName: traefik-local
   tls:
   - hosts:
     - speedtest.flux.techbabette.com
