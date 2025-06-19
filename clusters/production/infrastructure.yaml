@@ -46,3 +46,19 @@ spec:
         kind: SealedSecret
         name: cloudflare
         namespace: cert-manager
+    - patch: |
+        - op: replace
+          path: /spec/encryptedData/AWS_ACCESS_KEY_ID
+          value: AgBGDcMrdYuyOqnQKVuDp8yicAygyDmy3sOLQykQT8W2S5VnwHo7tTIm91iVSkouEOfYWZY5mWJdx5OLejRSil/A3yLfOpYJHeajYnSjfd+8d+ngoevMeEpg0uekpMa0dJC8LO9gvvY1SaUPu1hEyJxvoI0aIRWvGR9wPaDQvEuMWGdN3rBmglC4YE65Tw4tqUwL3KlWWVBFsJ6vstKlvMTfidzK3iAgIn93Jw0NqlSjSx1AxzYuyJnqtRdRlPrpt1mpLxL6QNcPSrUVQ3+AKwrzMoL3i6fNvilrS6FhOoTAuDmbRDulHjpPKe+z75tnUAZOHPLtraBKeHK7RO0gi/sPHA4r/rz3CQ+c21zOfrticUdWD368X1NklZ6qE8IphM/CN9LyIDC6HnBt7HezLMdJow/xTArXOn+CzVd5p+o5vVQCpMd8kEx0vMhaGo2lx8sRlULHSmAfRLvmE5SaXEU46jibLo9P9xBABtRegufXfiXliDDnbpTs5CjiRmRim+RGxp5v6rM59mhiJbvmY7ZR63+lhaNvqyT7UhWdqT6p+/DJ8B1Cn/Cv7zSmudlJxb3wSbpXSWsMcYuuJCwS5ViFmI+WWNZrUgK11czFSJAVY2YfuuNZBzJJYGNwZzYR0llxzeVUUDVR2z7THImUgArVJkopSuJwO+2caUuk66yaNSeu8VZc2hKSUCnBdFxYkMw7pyPbTz6ivVuV4IDvJCaz7rf9AA==
+      target: 
+        kind: SealedSecret
+        name: s3-backup-credentials
+        namespace: longhorn
+    - patch: |
+        - op: replace
+          path: /spec/encryptedData/AWS_SECRET_ACCESS_KEY
+          value: AgA1Q6Jd8gEa+YUhTwC4e69ryyoOqMwiEItBPOb7C+xpOvuw/jS/uLAlm9JyTnNDIeKy41AjqMp6qClD8y7LAwlS07qx0SlNuTztykxnOyGm5zdzaPSYBXosuoY6fne358RfyraxyNSPV9GVLVbWTfkPrY8k0mpPazNQghf+sYS/c6S5zNtU6G/20ALOddSwnJTZuWKMW9OsiiDRh6QcjeEvhIGmD3a14JO3QZl1/Vr4RPJ3EoB3uGOorhhWXKy4LYkyXINKeMDjrUiQ11A0qC03GW+Rwx2IN+MPzqa30B5tvwZqeV3uwM/M59oCaqyZgZUClegMJxZD5drYGLjcUdzoqaHT4oPc64oK8lQm33jFI1brbt3cU9LE7X01teZd+M5eD3AZWCHZk1EstW08zMhnhr+2KmvSV/9gSBw4q/iaUXXxXkspBGE5KkgBxQya6iZCXkaq2Mqfz/5o1hOjfa+spZtCXZroThmJV9+9u3ulLbluwRhhF5sh+zSCln/8TS0ItWmR6g3wZUj1Rmgy8QPE1PVfeB/pDXLSBBG0aCskCPUac10mflUWW/sU5tnaoh8F6+QU9ujWmED/hkT01fVRVbDkStSybLyThn8EYfKw/dh79v74NzBvFa6WKDu10itExhwgN4ggI/7r3ESPIBLaZmuQJcnc/uL28YSszmUCazx7Ir+lYm+Eb6CT3wHi71Zq+tfTIgqXGX1b/hS5W/sigBhkGiCIuFIpP9j4Y5ilCzIop5smPpOL 
+      target: 
+        kind: SealedSecret
+        name: s3-backup-credentials
+        namespace: longhorn
