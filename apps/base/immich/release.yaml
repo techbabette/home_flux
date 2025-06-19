@@ -10,10 +10,23 @@ spec:
     namespace: immich 
   interval: 10m
   values:
-    postgresql.global.postgresql.auth.existingSecret: database-user
-    immich.persistence.library.existingClaim: images
-    env.DB_HOSTNAME: immich-cluster-rw
-    env.DB_DATABASE_NAME: immich
-    redis.enabled: true
-    machine-learning.enabled: false
-    server.ingress.main.enabled: false
+    postgresql:
+      global:
+        postgresql:
+          auth:
+            existingSecret: database-user
+    immich:
+      persistence:
+        library:
+          existingClaim: images
+    env:
+      DB_HOSTNAME: immich-cluster-rw
+      DB_DATABASE_NAME: immich
+    redis:
+      enabled: true
+    machine-learning:
+      enabled: false
+    server:
+      ingress:
+        main:
+          enabled: false
