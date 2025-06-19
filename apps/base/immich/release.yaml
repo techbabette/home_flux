@@ -10,7 +10,7 @@ spec:
       chart: immich 
       version: "0.9.3"
       sourceRef:
-        kind: HelmRepository
+        kind: OCIRepository 
         name: immich 
         namespace: immich 
       interval: 12h
