@@ -17,3 +17,7 @@ spec:
   values:
     service:
       enabled: false
+    ingressClass:
+      enabled: true
+      isDefaultClass: true
+      name: "traefik-local"
