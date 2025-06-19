@@ -16,6 +16,7 @@ spec:
       interval: 12h
   values:
     postgresql.global.postgresql.auth.existingSecret: database-user
+    immich.persistence.library.existingClaim: images
     env.DB_HOSTNAME: immich-cluster-rw
     env.DB_DATABASE_NAME: immich
     redis.enabled: true
