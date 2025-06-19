@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - ./storageClasses 
   - ingress.yaml
-  - s3-backup-credentials
+  - s3-backup-credentials.yaml
