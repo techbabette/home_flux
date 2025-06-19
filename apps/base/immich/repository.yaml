@@ -6,4 +6,4 @@ metadata:
 spec:
   interval: 24h
   url: oci://ghcr.io/immich-app/immich-charts/immich 
-  semver: "~0.9.3"
+  semver: "0.9.3"
