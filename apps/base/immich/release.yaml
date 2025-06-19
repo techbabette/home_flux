@@ -22,6 +22,11 @@ spec:
     env:
       DB_HOSTNAME: immich-cluster-rw
       DB_DATABASE_NAME: immich
+      DB_PASSWORD:
+        valueFrom:
+          secretKeyRef:
+            name: database-user
+            key: password
     redis:
       enabled: true
     machine-learning:
