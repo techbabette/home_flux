@@ -22,7 +22,9 @@ spec:
         enabled: true
     gateway:
       enabled: true
-      annotations: ["cert-manager.io/issuer: cloudflare"]
+      annotations: [{
+          "cert-manager.io/issuer": "cloudflare"
+        }]
     ingressClass:
       enabled: true
       isDefaultClass: true
