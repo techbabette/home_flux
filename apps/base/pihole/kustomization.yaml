@@ -6,3 +6,4 @@ resources:
   - ./secrets
   - deployment.yaml
   - ./services
+  - HTTPRoute.yaml
