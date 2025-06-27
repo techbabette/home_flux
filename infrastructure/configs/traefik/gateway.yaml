@@ -10,8 +10,8 @@ spec:
   listeners:
   - name: web-local
     hostname: "*.flux.techbabette.com"
-    port: 443
-    protocol: TCP 
+    port: 8443
+    protocol: HTTPS
     allowedRoutes:
       namespaces:
         from: Selector
