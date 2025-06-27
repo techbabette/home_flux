@@ -20,6 +20,8 @@ spec:
     experimental:
       kubernetesGateway:
         enabled: true
+    providers:
+      kubernetesGateway: enabled
     gateway:
       enabled: true
       annotations: {
