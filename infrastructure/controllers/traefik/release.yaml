@@ -17,6 +17,9 @@ spec:
   values:
     service:
       enabled: false
+    experimental:
+      kubernetesGateway:
+        enabled: true
     ingressClass:
       enabled: true
       isDefaultClass: true
