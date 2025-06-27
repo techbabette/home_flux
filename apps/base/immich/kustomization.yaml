@@ -7,4 +7,3 @@ resources:
   - database-cluster.yaml 
   - repository.yaml
   - release.yaml
-  - ingress.yaml
