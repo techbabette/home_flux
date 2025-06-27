@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - ./storageClasses 
   - s3-backup-credentials.yaml
+  - HTTPRoute.yaml
