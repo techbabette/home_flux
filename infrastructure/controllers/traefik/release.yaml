@@ -17,9 +17,6 @@ spec:
   values:
     service:
       enabled: false
-    experimental:
-      kubernetesGateway:
-        enabled: true
     providers:
       kubernetesGateway: enabled
     gateway:
