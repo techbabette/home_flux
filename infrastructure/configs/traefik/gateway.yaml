@@ -11,7 +11,7 @@ spec:
   - name: web-local
     hostname: "*.flux.techbabette.com"
     port: 443
-    protocol: HTTPS
+    protocol: TCP 
     allowedRoutes:
       namespaces:
         from: Selector
