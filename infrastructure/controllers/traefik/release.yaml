@@ -20,11 +20,6 @@ spec:
     providers:
       kubernetesGateway:
         enabled: true
-    gateway:
-      enabled: true
-      annotations: {
-          "cert-manager.io/issuer": "cloudflare"
-        }
     gatewayClass:
       enabled: true 
     ingressClass:

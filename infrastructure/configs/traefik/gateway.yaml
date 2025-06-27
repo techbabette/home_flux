@@ -1,0 +1,24 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  annotations:
+    cert-manager.io/issuer: cloudflare
+  name: traefik-gateway
+  namespace: ingress-traefik
+spec:
+  gatewayClassName: traefik
+  listeners:
+  - name: web-local
+    hostname: "*.flux.techbabette.com"
+    port: 443
+    protocol: HTTPS
+    allowedRoutes:
+      namespaces:
+        from: Selector
+        selector:
+          matchLabels:
+            local-access: "true"
+    tls:
+      mode: Terminate
+      certificateRefs:
+        - name: local-cloudflare 
