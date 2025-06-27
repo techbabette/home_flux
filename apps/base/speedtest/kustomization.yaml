@@ -7,3 +7,4 @@ resources:
   - ./config-maps
   - deployment.yaml
   - ./services
+  - HTTPRoute.yaml
