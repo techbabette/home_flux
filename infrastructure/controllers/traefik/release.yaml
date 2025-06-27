@@ -20,6 +20,8 @@ spec:
     providers:
       kubernetesGateway:
         enabled: true
+    gateway:
+      enabled: false 
     gatewayClass:
       enabled: true 
     ingressClass:
